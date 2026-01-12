@@ -1,3 +1,7 @@
+## Manifesto
+
+- [Evolutionary Discovery Engineering (EDiE) Manifesto](Evolutionary_Discovery_Engineering_MANIFESTO.md)
+
 # QAT-research-hub  
 **Auto-generated Quantization as Survival Strategy (QAT)**
 
