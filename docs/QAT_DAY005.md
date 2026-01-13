@@ -104,6 +104,47 @@ Human-designed heuristics are explicitly minimized.
 A generator that produces valid, executable strategies.
 
 ---
+### Design Constraint: Finite-Resource Evolution
+
+This research assumes finite computational resources as a first-class constraint.
+
+In a theoretical universe with infinite trials, it may be acceptable that
+99.9999999999% of randomly generated strategies immediately collapse.
+However, EDiE operates under real-world limits: finite GPU time, finite memory, and finite human attention.
+
+Therefore, evolution is allowed to occur only after enforcing minimal physical viability constraints.
+
+This is not a form of human optimization or value injection.
+It is the equivalent of physical laws in nature:
+
+Objects that violate conservation laws do not evolve.
+
+Strategies that cannot execute do not compete.
+
+We explicitly distinguish:
+
+Inferior strategies: executable but weak (allowed to compete)
+
+Lethal strategies: non-executable, numerically unstable, or undefined (filtered out)
+
+Lethal constraints (non-exhaustive):
+
+Forward pass failure (NaN / Inf)
+
+Invalid tensor shapes or memory overflow
+
+Quantization configurations that break model execution
+
+Immediate collapse without producing outputs
+
+Only strategies that satisfy these survival preconditions enter the evolutionary loop.
+
+This filtering step defines the environmental physics of the algorithmic ecosystem,
+not its goals.
+
+Evolutionary Discovery Engineering does not evolve in chaos.
+It evolves within a universe that has laws.
+
 
 ## 5. Strategy Competition Framework (Milestone M5)
 
